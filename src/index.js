@@ -8,7 +8,7 @@ import store from './app/store';
 
 import { Provider } from 'react-redux';
 
-require('dotenv').config();
+// require('dotenv').config();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
