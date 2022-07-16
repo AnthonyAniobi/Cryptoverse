@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import millify from 'millify';
 import { Col, Row, Typeograpy, Select, Typography } from 'antd';
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined } from '@ant-design/icons';
+
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from '../services/cryptoApi';
 
 import LineChart from './LineChart';
@@ -18,6 +19,8 @@ const CryptoDetails = () => {
     const { data, isFetching } = useGetCryptoDetailsQuery(coinId);
     const { data: coinHistory } = useGetCryptoHistoryQuery({ coinId, timePeriod })
     const cryptoDetails = data?.data?.coin;
+
+    console.log('coin history : =>', coinHistory)
 
     const stats = [
         { title: 'Price to USD', value: `$ ${cryptoDetails?.price && millify(cryptoDetails?.price)}`, icon: <DollarCircleOutlined /> },
@@ -34,6 +37,10 @@ const CryptoDetails = () => {
         { title: 'Total Supply', value: `$ ${cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)}`, icon: <ExclamationCircleOutlined /> },
         { title: 'Circulating Supply', value: `$ ${cryptoDetails?.supply?.circulating && millify(cryptoDetails?.supply?.circulating)}`, icon: <ExclamationCircleOutlined /> },
     ];
+
+    if (isFetching) return 'Loading...';
+
+    console.log('logging crypto details');
 
     console.log(cryptoDetails);
 
