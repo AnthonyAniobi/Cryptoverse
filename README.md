@@ -2,6 +2,9 @@
 
 This is a react project for viewing and tracking crypto markets as well as the news associated with all cryptocurrencies.
 
+# Preview
+![Preview](screenshots/cryptoverse_preview.gif)
+
 ## Technologies and libraries used
 - React
 - Css
@@ -18,3 +21,11 @@ This is a react project for viewing and tracking crypto markets as well as the n
 - react-router-dom
 
 ## Screenshots
+#### Home page
+![Home Page](screenshots/cryptoverse_home.png)
+#### Currencies page
+![All Currencies](screenshots/cryptoverse_currencies.png)
+#### Single Currency Page
+![Single Currency](screenshots/cryptoverse_single_coin.png)
+#### Crypto News
+![Crypto News](screenshots/cryptoverse_news.png)
