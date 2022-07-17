@@ -2,6 +2,8 @@
 
 This is a react project for viewing and tracking crypto markets as well as the news associated with all cryptocurrencies.
 
+![GitHub](https://img.shields.io/github/license/AnthonyAniobi/cryptoverse)
+
 # Preview
 ![Preview](screenshots/cryptoverse_preview.gif)
 
