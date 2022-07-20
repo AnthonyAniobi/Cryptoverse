@@ -1,8 +1,13 @@
 # Cryptoverse
 
+![Issues](https://img.shields.io/github/issues/AnthonyAniobi/Cryptoverse)
+![Forks](https://img.shields.io/github/forks/AnthonyAniobi/Cryptoverse)
+![Stars](https://img.shields.io/github/stars/AnthonyAniobi/Cryptoverse)
+![License](https://img.shields.io/github/license/AnthonyAniobi/Cryptoverse)
+
 This is a react project for viewing and tracking crypto markets as well as the news associated with all cryptocurrencies.
 
-![GitHub](https://img.shields.io/github/license/AnthonyAniobi/cryptoverse)
+
 
 # Preview
 ![Preview](screenshots/cryptoverse_preview.gif)
